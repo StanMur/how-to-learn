@@ -132,19 +132,19 @@
 
 .two-columns_text_p {
   margin-top: 30px;
- }
+}
 
- .two-columns__span-accent {
-   line-height: 34px;
-   font-size: 24px;
-   font-weight: 700;
- }
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 700;
+}
 
- .digits {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-top: 100px;
+.digits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
 }
 
 .section-title {
