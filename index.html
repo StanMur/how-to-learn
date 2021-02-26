@@ -8,47 +8,54 @@
     <title>Научиться учиться</title>
   </head>
   <body>
+    <!--начинается основной блок страницы-->
     <div class="page">
+      <!--шапка сайта, она же первый блок с мальчиком-->
       <header class="header">
+        <!--логотип сайта в шапке-->
         <img
           class="logo logo_place_header"
           src="./images/logo_place_header.svg"
           alt="Логотип Яндекс Практикум"
         />
-        <h1 class="header__title">Научиться учиться</h1>
-        <p class="header__subtitle">
+        <!--главный заголовок-->
+        <h1 class="header__title reset-margin">Научиться учиться</h1>
+        <p class="header__subtitle reset-margin">
           Какие современные и эффективные подходы к обучению вы можете
           использовать в своей жизни?
-          <a class="header__link" href="#">Узнать</a
+          <a class="header__link" target="_blank" href="#">Узнать</a
           ><!--здесь можно было поставить стрелочку с помощью мнемоники html, я сделал с помощью after, для практики, это сложнее чем просто вставить зесь код стрелки-->
         </p>
-        <div class="header__main-illustration">
-          <img
-            class="header__main-illustration_img"
-            src="./images/header-image.png"
-            alt="Картинка мальчика"
-          />
-        </div>
+        <img
+          class="header__main-illustration"
+          src="./images/header-image.png"
+          alt="Картинка мальчика"
+        />
+        <!--блок фона мальчика "синий квадрат" -->
         <div class="header__square-pic"></div>
       </header>
+      <!--блок content содержит все блоки до подвала (footer)-->
       <main class="content">
-        <section class="description content_description_block">
+        <!--Блок  описания обучения-->
+        <section class="description">
           <div class="two-columns">
-            <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
+            <h2 class="two-columns__brief reset-margin">
+              Главные проблемы в обучении
+            </h2>
             <div class="two-columns__main-text">
-              <p class="two-columns__paragraph">
+              <p class="two-columns__paragraph reset-margin">
                 Ни в школе, ни в институте нас не учат тому, как правильно
                 изучать материал. Мы готовимся к экзаменам и учим билеты. Мы
                 тренируемся решать однообразные задачи, чтобы лучше сдать тест,
                 но часто в итоге это не дает нам реального знания. Зубрежка
                 быстро выветривается и не приносит пользы.
               </p>
-              <p class="two-columns__paragraph two-columns_text_p">
+              <p class="two-columns__paragraph reset-margin">
                 <span class="two-columns__span-accent">Вывод:</span> учиться
                 тоже нужно уметь, но почему-то этому мало где учат. Что с этим
                 делать?
               </p>
-              <p class="two-columns__paragraph two-columns_text_p">
+              <p class="two-columns__paragraph reset-margin">
                 Конкретные техники и упражнения помогают изменить подход к
                 обучению, сделать его эффективным и захватывающим. Эти же
                 техники применяются на примере обучения в Практикуме.
@@ -56,141 +63,166 @@
             </div>
           </div>
         </section>
-        <section class="digits content_digits_block">
-          <h2 class="section-title">Цифры и факты</h2>
-          <h2 class="section-subtitle">Про учёбу и мозг</h2>
-          <div class="table">
-            <div class="table__cell table__cell_theme_white">
-              <h3 class="table__heading">86 миллиардов</h3>
-              <p class="table__text">Число нейронов в мозге человека</p>
-            </div>
-            <div class="table__cell table__cell_theme_white">
-              <h3 class="table__heading">2,1 миллиарда</h3>
-              <p class="table__text">
+        <!--блок с фактов о возможностях человеческого мозга. Так разметка этого блока с подблоками будет использзоваться ниже-->
+        <section class="digits">
+          <h2 class="section-title reset-margin">Цифры и факты</h2>
+          <p class="section-subtitle reset-margin">Про учёбу и мозг</p>
+          <ul class="table reset-margin">
+            <li class="table__cell">
+              <h3 class="table__heading reset-margin">86 миллиардов</h3>
+              <p class="table__text reset-margin">
+                Число нейронов в мозге человека
+              </p>
+            </li>
+            <li class="table__cell">
+              <h3 class="table__heading reset-margin">2,1 миллиарда</h3>
+              <p class="table__text reset-margin">
                 Число нуждающихся в повышении квалификации
               </p>
-              <p class="table__text table__text_theme_white">
+              <p class="table__text reset-margin table__text_theme_white">
                 Всемирный Банк, 2017
               </p>
-            </div>
-            <div class="table__cell table__cell_theme_white">
-              <h3 class="table__heading">1000 терабайт</h3>
-              <p class="table__text">ОбЪём памяти человека</p>
-            </div>
-            <div class="table__cell table__cell_theme_white">
-              <h3 class="table__heading">500 триллионов</h3>
-              <p class="table__text">
+            </li>
+            <li class="table__cell">
+              <h3 class="table__heading reset-margin">1000 терабайт</h3>
+              <p class="table__text reset-margin">ОбЪём памяти человека</p>
+            </li>
+            <li class="table__cell">
+              <h3 class="table__heading reset-margin">500 триллионов</h3>
+              <p class="table__text reset-margin">
                 Число ответственных за обучение нервных синапсов у взрослого
                 человека
               </p>
-            </div>
-            <div class="table__cell table__cell_theme_white">
-              <h3 class="table__heading">420 миллионов</h3>
-              <p class="table__text">
+            </li>
+            <li class="table__cell">
+              <h3 class="table__heading reset-margin">420 миллионов</h3>
+              <p class="table__text reset-margin">
                 Число взрослых людей моложе 25 лет, не имеющих образования для
                 трудоустройства
               </p>
-              <p class="table__text table__text_theme_white">
+              <p class="table__text reset-margin table__text_theme_white">
                 Всемирный Банк, 2017
               </p>
-            </div>
-            <div class="table__cell table__cell_theme_white">
-              <h3 class="table__heading">17–20 лет</h3>
-              <p class="table__text">Пик обучаемости</p>
-            </div>
-            <div class="table__cell table__cell_theme_white">
-              <h3 class="table__heading">1885 год</h3>
-              <p class="table__text">Открытие кривой забывания</p>
-            </div>
-            <div class="table__cell table__cell_theme_white">
-              <h3 class="table__heading">1889 год</h3>
-              <p class="table__text">Открытие условного рефлекса</p>
-            </div>
-          </div>
+            </li>
+            <li class="table__cell">
+              <h3 class="table__heading reset-margin">17–20 лет</h3>
+              <p class="table__text reset-margin">Пик обучаемости</p>
+            </li>
+            <li class="table__cell">
+              <h3 class="table__heading reset-margin">1885 год</h3>
+              <p class="table__text reset-margin">Открытие кривой забывания</p>
+            </li>
+            <li class="table__cell">
+              <h3 class="table__heading reset-margin">1889 год</h3>
+              <p class="table__text reset-margin">
+                Открытие условного рефлекса
+              </p>
+            </li>
+          </ul>
         </section>
-
-        <section class="feynman content_feynman_block">
-          <h2 class="feynman__title">Метод Фейнмана</h2>
-          <h2 class="feynman__subtitle">Выучить и не забыть</h2>
-          <a class="feynman__link" href="#">Подробнее</a>
+        <!--рекламный блок с картинкой Фейнмана-->
+        <section class="feynman">
+          <h2 class="feynman__title reset-margin">Метод Фейнмана</h2>
+          <p class="feynman__subtitle reset-margin">Выучить и не забыть</p>
+          <a class="feynman__link" target="_blank" href="#">Подробнее</a>
         </section>
 
         <section class="kaufman">
-          <h2 class="section-title section-title_theme_dark">
+          <h2 class="section-title reset-margin section-title_theme_dark">
             Принципы обучения
           </h2>
-          <h2 class="section-subtitle section-subtitle_theme_dark">
+          <p class="section-subtitle reset-margin section-subtitle_theme_dark">
             от Джоша Кауфмана
-          </h2>
-          <div class="table table_theme_dark">
-            <div class="table__cell table__cell_theme_dark">
-              <h3 class="table__heading table__heading_theme_dark">1</h3>
-              <p class="table__text table__text_theme_dark">
+          </p>
+          <ul class="table table_theme_dark">
+            <li class="table__cell table__cell_theme_dark">
+              <h3 class="table__heading reset-margin table__heading_theme_dark">
+                1
+              </h3>
+              <p class="table__text reset-margin table__text_theme_dark">
                 Выберите привлекательный проект.
               </p>
-            </div>
-            <div class="table__cell table__cell_theme_dark">
-              <h3 class="table__heading table__heading_theme_dark">2</h3>
-              <p class="table__text table__text_theme_dark">
+            </li>
+            <li class="table__cell table__cell_theme_dark">
+              <h3 class="table__heading reset-margin table__heading_theme_dark">
+                2
+              </h3>
+              <p class="table__text reset-margin table__text_theme_dark">
                 Сосредоточьтесь на каком-то одном навыке.
               </p>
-            </div>
-            <div class="table__cell table__cell_theme_dark">
-              <h3 class="table__heading table__heading_theme_dark">3</h3>
-              <p class="table__text table__text_theme_dark">
+            </li>
+            <li class="table__cell table__cell_theme_dark">
+              <h3 class="table__heading reset-margin table__heading_theme_dark">
+                3
+              </h3>
+              <p class="table__text reset-margin table__text_theme_dark">
                 Определите целевой уровень мастерства.
               </p>
-            </div>
-            <div class="table__cell table__cell_theme_dark">
-              <h3 class="table__heading table__heading_theme_dark">4</h3>
-              <p class="table__text table__text_theme_dark">
+            </li>
+            <li class="table__cell table__cell_theme_dark">
+              <h3 class="table__heading reset-margin table__heading_theme_dark">
+                4
+              </h3>
+              <p class="table__text reset-margin table__text_theme_dark">
                 Разбейте навык на элементы.
               </p>
-            </div>
-            <div class="table__cell table__cell_theme_dark">
-              <h3 class="table__heading table__heading_theme_dark">5</h3>
-              <p class="table__text table__text_theme_dark">
+            </li>
+            <li class="table__cell table__cell_theme_dark">
+              <h3 class="table__heading reset-margin table__heading_theme_dark">
+                5
+              </h3>
+              <p class="table__text reset-margin table__text_theme_dark">
                 Приготовьте всё необходимое для занятий.
               </p>
-            </div>
-            <div class="table__cell table__cell_theme_dark">
-              <h3 class="table__heading table__heading_theme_dark">6</h3>
-              <p class="table__text table__text_theme_dark">
+            </li>
+            <li class="table__cell table__cell_theme_dark">
+              <h3 class="table__heading reset-margin table__heading_theme_dark">
+                6
+              </h3>
+              <p class="table__text reset-margin table__text_theme_dark">
                 Устраните препятствия для занятий.
               </p>
-            </div>
-            <div class="table__cell table__cell_theme_dark">
-              <h3 class="table__heading table__heading_theme_dark">7</h3>
-              <p class="table__text table__text_theme_dark">
+            </li>
+            <li class="table__cell table__cell_theme_dark">
+              <h3 class="table__heading reset-margin table__heading_theme_dark">
+                7
+              </h3>
+              <p class="table__text reset-margin table__text_theme_dark">
                 Выделите специальное время для занятий.
               </p>
-            </div>
-            <div class="table__cell table__cell_theme_dark">
-              <h3 class="table__heading table__heading_theme_dark">8</h3>
-              <p class="table__text table__text_theme_dark">
+            </li>
+            <li class="table__cell table__cell_theme_dark">
+              <h3 class="table__heading reset-margin table__heading_theme_dark">
+                8
+              </h3>
+              <p class="table__text reset-margin table__text_theme_dark">
                 Создайте быстрые петли обратной связи.
               </p>
-            </div>
-            <div class="table__cell table__cell_theme_dark">
-              <h3 class="table__heading table__heading_theme_dark">9</h3>
-              <p class="table__text table__text_theme_dark">
+            </li>
+            <li class="table__cell table__cell_theme_dark">
+              <h3 class="table__heading reset-margin table__heading_theme_dark">
+                9
+              </h3>
+              <p class="table__text reset-margin table__text_theme_dark">
                 Занимайтесь по расписанию, короткими интенсивными интервалами.
               </p>
-            </div>
-            <div class="table__cell table__cell_theme_dark">
-              <h3 class="table__heading table__heading_theme_dark">10</h3>
-              <p class="table__text table__text_theme_dark">
+            </li>
+            <li class="table__cell table__cell_theme_dark">
+              <h3 class="table__heading reset-margin table__heading_theme_dark">
+                10
+              </h3>
+              <p class="table__text reset-margin table__text_theme_dark">
                 Уделяйте внимание количеству и скорости.
               </p>
-            </div>
-          </div>
-          <div class="kaufman__triangle">
-            <img src="./images/kaufman-triangle.svg" alt="Синий треугольник" />
-          </div>
+            </li>
+          </ul>
+          <div class="kaufman__triangle"></div>
         </section>
       </main>
+      <!--подвал сайта-->
       <footer class="footer">
         <div class="footer__columns">
+          <!--блок с логотипом и копирайтом-->
           <div class="footer__column footer__column_content_copyright">
             <img
               class="logo logo_place_footer"
@@ -199,8 +231,10 @@
             />
             <span class="footer__author">&copy;2019. Виктор Абанькин</span>
           </div>
-          <div class="footer__column footer__column_content_info">
-            <span class="footer__column-heading">О Практикуме</span>
+          <!--блок меню-->
+          <nav class="footer__column footer__column_content_info">
+            <h4 class="footer__column-heading reset-margin">О Практикуме</h4>
+            <!--колонка ссылок меню-->
             <ul class="footer__column-links">
               <li class="footer__column-link">
                 <a class="footer__column-item" href="#">Главная</a>
@@ -212,43 +246,43 @@
                 <a class="footer__column-item" href="#">Наставники</a>
               </li>
             </ul>
-          </div>
-          <div class="footer__column footer__column_content_social">
-            <span class="footer__column-heading">Соцсети</span>
+          </nav>
+          <!--блок ссылок соцсетей-->
+          <nav class="footer__column footer__column_content_social">
+            <h4 class="footer__column-heading reset-margin">Соцсети</h4>
             <ul class="footer__column-links">
               <li class="footer__column-link">
-                <a class="footer__column-item" href="#"
+                <a class="footer__column-item" target="_blank" href="#"
                   ><img
-                    class="footer__column_item_icon"
+                    class="footer__social-icon"
                     src="./images/facebook_color_white.svg"
                     alt="Facebook"
-                  />
-                  Facebook</a
+                  />Фейсбук</a
                 >
               </li>
               <li class="footer__column-link">
-                <a class="footer__column-item" href="#"
+                <a class="footer__column-item" target="_blank" href="#"
                   ><img
-                    class="footer__column_item_icon"
+                    class="footer__social-icon"
                     src="./images/vk_color_white.svg"
                     alt="ВКонтакте"
-                  />
-                  ВКонтакте</a
+                  />ВКонтакте</a
                 >
               </li>
               <li class="footer__column-link">
-                <a class="footer__column-item" href="#"
+                <a class="footer__column-item" target="_blank" href="#"
                   ><img
-                    class="footer__column_item_icon"
+                    class="footer__social-icon"
                     src="./images/instagram_color_white.svg"
                     alt="instagram"
-                  />instagram</a
+                  />Инстаграм</a
                 >
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
       </footer>
+      <!--так лучше уже с комментариями?)) Прошу меня простить)) Виноват испавлюсь))-->
     </div>
   </body>
 </html>
