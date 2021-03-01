@@ -1,13 +1,5 @@
-/*Ольга, мне уже страшно)) Меня сбило с толку, что в первом ревью вы писали создай класс сбросить браузерный маргин.*/
-h1,
-h2,
-h3,
-h4,
-p,
-ul {
-  margin: 0;
-}
 
+/*Так правильно?))*/
 /*-----------общая страница------------*/
 .page {
   min-width: 1100px;
@@ -46,7 +38,7 @@ ul {
 
 .header__title {
   max-width: 730px;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 700;
@@ -64,6 +56,7 @@ ul {
   font-weight: normal;
   z-index: 10;
   color: #000;
+  margin: 0;
 }
 
 .header__link {
@@ -117,6 +110,7 @@ ul {
   font-size: 24px;
   font-weight: normal;
   color: #000;
+  margin: 0;
 }
 
 .two-columns__brief {
@@ -125,6 +119,7 @@ ul {
   font-size: 18px;
   font-weight: 400;
   color: #2f80ed;
+  margin: 0;
 }
 
 .two-columns__paragraph:nth-of-type(1n + 2) {
@@ -152,12 +147,13 @@ ul {
   font-size: 60px;
   font-weight: 700;
   color: #000;
+  margin: 0;
 }
 
 .section-subtitle {
   text-align: center;
   width: 60%;
-  margin-top: 20px;
+  margin: 20px 0 0 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -171,21 +167,19 @@ ul {
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .table__cell {
   margin-top: 60px;
-  max-width: 250px;
+  width: 250px;
 }
 
 .table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: 700;
-  padding-bottom: 20px;
-}
-
-.table__heading_theme_white {
+  margin: 0;
   color: #000;
 }
 
@@ -194,11 +188,9 @@ ul {
   font-size: 18px;
   font-weight: normal;
   color: #000;
+  margin: 20px 0 0 0;
 }
 
-.table__text_theme_white {
-  margin-top: 20px;
-}
 /*блок Фейнмана, возможно с его "довольным лицом"*/
 .feynman {
   background: #f2f2f2 url(../images/feynman.png) bottom left / 867px 637px
@@ -222,7 +214,7 @@ ul {
 }
 
 .feynman__subtitle {
-  margin-top: 70px;
+  margin: 70px 0 0 0;
   text-align: center;
   line-height: 51px;
   font-size: 36px;
@@ -285,10 +277,12 @@ ul {
 }
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
-  max-width: 200px;
+  width: 200px;
+  margin: 80px 0 0 0;
+}
+
+.table__heading_theme_dark {
   color: white;
-  margin-right: 0;
-  margin-top: 80px;
 }
 
 .table__text_theme_dark {
@@ -337,6 +331,7 @@ ul {
   line-height: 30px;
   font-size: 18px;
   font-weight: 700;
+  margin: 0;
 }
 
 .footer__column-item {
