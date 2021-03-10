@@ -1,0 +1,19 @@
+.feynman__link {
+  position: absolute;
+  top: 49%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.feynman__link::after {
+  content: " \1F812";
+}
+
+.feynman__link:hover {
+  opacity: 0.5;
+  transition: ease-out 500ms;
+}
