@@ -10,7 +10,7 @@
 }
 
 .feynman__link::after {
-  content: " \1F812";
+  content: " \2192";
 }
 
 .feynman__link:hover {
